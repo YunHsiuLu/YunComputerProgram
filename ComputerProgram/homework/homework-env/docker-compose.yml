@@ -1,0 +1,13 @@
+version: "3"
+services:
+  homework:
+    build: ./hw
+    volumes:
+      - ./merged:/data
+    networks:
+      - no-network
+
+networks:
+  no-network:
+    driver: bridge
+    internal: true
