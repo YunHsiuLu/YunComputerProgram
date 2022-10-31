@@ -21,8 +21,6 @@ int main() {
 		return 0;
 	}
 	while (1) {
-		p = (rand()%100)/100.;
-		isNap = (p < hare_nap_pro);
 		if (t_place > 12.3) t_win = 1;
 		if (h_place > 12.3) h_win = 1;
 		printf("Turn %d) Tortoise: %f", turn, t_place);
@@ -44,7 +42,8 @@ int main() {
 			if (isNap) printf("(NAP)\n");
 			else printf("\n");
 		}
-
+		p = (rand()%100)/100.;
+		isNap = (p < hare_nap_pro);
 		t_place += t_speed;
 		if (!isNap) h_place += h_speed;
 		turn++;
