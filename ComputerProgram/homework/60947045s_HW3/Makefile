@@ -21,6 +21,9 @@ all: 1.o 2.o 3.o 4-1.o 4-2.o 5.o
 	gcc -c hw0304-2.c
 	gcc -o hw0304-2 hw0304-2.o 4/hanoi.o -lm
 5.o:
-	gcc -o hw0305 hw0305.c smallten.c logic.c
+	gcc -c smallten.c
+	gcc -c logic.c
+	gcc -c hw0305.c
+	gcc -o hw0305 hw0305.o smallten.o logic.o
 clean:
 	 

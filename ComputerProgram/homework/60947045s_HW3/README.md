@@ -16,7 +16,7 @@
 	It's easy to compute, shown as the results.
 
 * hw0305:
-	The logic.c has implemented the all logic gate, halfAdder, and fullAdder. The hw0305.c has main(), multiplier(), and some print functions. In main(), I call the communicate() first, it will ask for two input values; assume the extern variables are (x, y), I can fetch them and do the follows in main(). If the input numbers are not 4-bit number, it will return the error message and tell you which bit is wrong. If the input numbers are valid, the results show as homework draft says.
+	The logic.c has implemented the all logic gate, halfAdder, and fullAdder. The hw0305.c has main(), multiplier(), and some print functions. In main(), I call the communicate() first, then I fetch the user input as x and y. First I will check the input if valid or not. If the input numbers are not 4-bit number, it will return the error message and tell you the wrong bit. If the input numbers are valid, the results show as homework draft says.
 
 * hw0306:
 	I use the command `find / -iname math.h` to find the place of math.h. The result is /usr/include/math.h.

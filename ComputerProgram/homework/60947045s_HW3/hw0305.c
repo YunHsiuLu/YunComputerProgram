@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "smallten.h"
 
-extern int x, y;
+int x = 0, y = 0;
 extern bool cOut, tmpS, tmpC;
 extern bool z0, z1, z2, z3, z4, z5, z6, z7;
 
@@ -10,9 +10,14 @@ void print_bin();
 void print_result();
 void multiplier(bool x0, bool x1, bool x2, bool x3, bool y0, bool y1, bool y2, bool y3);
 
-int main() {
+int main() {	
 	int cx = 0, cy = 0;
 	communicate();
+
+	printf("Please enter the first number (A) in binary: ");
+	scanf("%d", &x);
+	printf("Please enter the second number (B) in binary: ");
+	scanf("%d", &y);
 	cx = check_bin(x);
 	if (cx < 1) {
 		printf("x is invalid!\n");
